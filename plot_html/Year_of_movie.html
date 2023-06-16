@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/chalk.js"></script>
+
+</head>
+<body>
+    <div id="8727d9d768c7456094e2b58b3ac1fa22" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_8727d9d768c7456094e2b58b3ac1fa22 = echarts.init(
+            document.getElementById('8727d9d768c7456094e2b58b3ac1fa22'), 'chalk', {renderer: 'canvas'});
+        var option_8727d9d768c7456094e2b58b3ac1fa22 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": "Year",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": 1920,
+                    "value": 6
+                },
+                {
+                    "name": 1930,
+                    "value": 6
+                },
+                {
+                    "name": 1940,
+                    "value": 13
+                },
+                {
+                    "name": 1950,
+                    "value": 22
+                },
+                {
+                    "name": 1960,
+                    "value": 17
+                },
+                {
+                    "name": 1970,
+                    "value": 21
+                },
+                {
+                    "name": 1980,
+                    "value": 25
+                },
+                {
+                    "name": 1990,
+                    "value": 43
+                },
+                {
+                    "name": 2000,
+                    "value": 45
+                },
+                {
+                    "name": 2010,
+                    "value": 45
+                },
+                {
+                    "name": 2020,
+                    "value": 7
+                }
+            ],
+            "radius": "60%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}:{c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                1920,
+                1930,
+                1940,
+                1950,
+                1960,
+                1970,
+                1980,
+                1990,
+                2000,
+                2010,
+                2020
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "Year of movies",
+            "left": "center",
+            "top": 30,
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_8727d9d768c7456094e2b58b3ac1fa22.setOption(option_8727d9d768c7456094e2b58b3ac1fa22);
+    </script>
+</body>
+</html>

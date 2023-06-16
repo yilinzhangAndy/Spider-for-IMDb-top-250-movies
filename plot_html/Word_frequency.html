@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-wordcloud.min.js"></script>
+
+</head>
+<body>
+    <div id="c4ee576ed740448d96de73b818d267ac" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_c4ee576ed740448d96de73b818d267ac = echarts.init(
+            document.getElementById('c4ee576ed740448d96de73b818d267ac'), 'white', {renderer: 'canvas'});
+        var option_c4ee576ed740448d96de73b818d267ac = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "wordCloud",
+            "shape": "circle",
+            "rotationRange": [
+                -90,
+                90
+            ],
+            "rotationStep": 45,
+            "girdSize": 20,
+            "sizeRange": [
+                12,
+                60
+            ],
+            "data": [
+                {
+                    "name": "Drama",
+                    "value": 72,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(87,39,18)"
+                        }
+                    }
+                },
+                {
+                    "name": "Thriller",
+                    "value": 29,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(105,135,64)"
+                        }
+                    }
+                },
+                {
+                    "name": "War",
+                    "value": 23,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(68,11,106)"
+                        }
+                    }
+                },
+                {
+                    "name": "Sci-Fi",
+                    "value": 20,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(150,105,123)"
+                        }
+                    }
+                },
+                {
+                    "name": "Romance",
+                    "value": 16,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(104,1,103)"
+                        }
+                    }
+                },
+                {
+                    "name": "Mystery",
+                    "value": 16,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(47,105,116)"
+                        }
+                    }
+                },
+                {
+                    "name": "Fantasy",
+                    "value": 13,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(7,3,63)"
+                        }
+                    }
+                },
+                {
+                    "name": "Comedy",
+                    "value": 13,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(159,11,135)"
+                        }
+                    }
+                },
+                {
+                    "name": "History",
+                    "value": 9,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(127,134,113)"
+                        }
+                    }
+                },
+                {
+                    "name": "Family",
+                    "value": 9,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(8,44,21)"
+                        }
+                    }
+                },
+                {
+                    "name": "Adventure",
+                    "value": 7,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(86,155,97)"
+                        }
+                    }
+                },
+                {
+                    "name": "Western",
+                    "value": 6,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(12,80,136)"
+                        }
+                    }
+                },
+                {
+                    "name": "Crime",
+                    "value": 5,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(19,101,155)"
+                        }
+                    }
+                },
+                {
+                    "name": "Sport",
+                    "value": 5,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(146,70,118)"
+                        }
+                    }
+                },
+                {
+                    "name": "Music",
+                    "value": 3,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(102,17,78)"
+                        }
+                    }
+                },
+                {
+                    "name": "Film-Noir",
+                    "value": 2,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(25,111,158)"
+                        }
+                    }
+                },
+                {
+                    "name": "Horror",
+                    "value": 2,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(26,16,154)"
+                        }
+                    }
+                }
+            ],
+            "drawOutOfBound": false,
+            "textStyle": {
+                "emphasis": {}
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    }
+};
+        chart_c4ee576ed740448d96de73b818d267ac.setOption(option_c4ee576ed740448d96de73b818d267ac);
+    </script>
+</body>
+</html>
