@@ -39,6 +39,7 @@ To import this package, the user could add the from `spider_tools.Data_Visualiza
 ```sh
 conda env create -f environment.yml
 ```
+* [spider_IMDb.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/Data_Visualization.py)spider_IMDb.py
   
 * [Data_Visualization.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/Data_Visualization.py)
 ```sh
