@@ -39,7 +39,9 @@ To import this package, the user could add the from `spider_tools.Data_Visualiza
 ```sh
 conda env create -f environment.yml
 ```
-* [spider_IMDb.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/Data_Visualization.py)spider_IMDb.py
+* [Spider_IMDb.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/spider_IMDb.py)
+
+This package is use to crawled all of the basic information of the 250 movies and save. However, because of the administrator of IMDb website add a detection to judge human or robot, it is not longer to run.
   
 * [Data_Visualization.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/Data_Visualization.py)
 ```sh
@@ -110,7 +112,6 @@ It will generated a pdf report and saved in movie_pdf:
 3. movie_pdf: A report of one movie will be generated in this folder
 4. plot_html: The movie ratio, word frequency, and movie year drawn by pyechatrs are all saved in this folder
 5. spider_tools: This folder contains all the libraries created by our team:
-spider_IMDb.py: This package is used to grab all the basic information of 250 movies and save them. But because the administrator of the IMDb website has added a detection to judge whether it is a human or a robot, it cannot run
 6. environment.yml: Conda environment file.
 7. Introduction.ipynb: Package tutorial and example.
 <!-- ROADMAP -->
