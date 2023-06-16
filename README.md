@@ -16,23 +16,13 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#dependencies">Dependencies</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      <li><a href="#dependencies">Dependencies</a></li>
+      <li><a href="#installation">Installation</a></li>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#authors">Authors</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -44,42 +34,47 @@
 
 This package is used to crawl the basic information of the top250 movies on IMDb, and provides data visualization of the global interface and analysis of individual movie data, and able to produce pdf reports.
 
-
-[Here goes the title with hyperlink](https://github.com/catiaspsilva/README-template)
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To import this package, the user could add the two packages on the begin of code.
-
-### Dependencies
-
-
-* Data_Visualization.py
-  ```sh
-  from spider_tools.Data_Visualization import Data
-  ```
+## Dependencies
+  
+### Setup (and activate) your environment
+```sh
+conda env create -f environment.yml
+```
+  
+* [Data_Visualization.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/Data_Visualization.py)
+```sh
+from spider_tools.Data_Visualization import Data
+```
+  
 This package is use to do export the global results of 250 movies, and the functions are:
-  1. import package:
-  `from spider_tools.Data_Visualization import Data`
+
+Import package:
+
+`from spider_tools.Data_Visualization import Data`
+ 
+Initialize class:
+ 
+`Data('./data/IMDb.xls')`
+
+Import data:
   
-  2. Initialize class:
-   ` Data('./data/IMDb.xls')`
-  3.  Import data:
-   `Data.Import()`
+`Data.Import()`
   
-  4.  Clean data, the data getting form the first step should be input, and the cleaned data is the output:
-   `Data.Cleaning(data)`
-  5. Get five values which need for visualization after data statistics, the cleaned data is input, and it will return a 5 length list which include numbers for different countries, name for different countries,a list of years, a list of era years, amd a list of Quantity per era:
-  `Data.Statistics(clean_data)`
-  6. The data after `cleaning()` and `Statistics()` is the input, and it will return 7 visualization plots, which include 1.the Distribution of Country origin 2. Year histogram and distribution 3.Year of movies 4. the top 100 most frequent words 5.the proportion of various types of movie 6.the distribution of movie lengths:
-  `Data.Visualization(clean_data, Statistics_data)`
+Clean data, the data getting form the first step should be input, and the cleaned data is the output:
+
+`Data.Cleaning(data)`
+
+Get five values which need for visualization after data statistics, the cleaned data is input, and it will return a 5 length list which include numbers for different countries, name for different countries,a list of years, a list of era years, amd a list of Quantity per era:
+
+`Data.Statistics(clean_data)`
+
+The data after `cleaning()` and `Statistics()` is the input, and it will return 7 visualization plots, which include 1.the Distribution of Country origin 2. Year histogram 3. distribution 4.Year of movies 5. the top 100 most frequent words 6.the proportion of various types of movie 7.the distribution of movie lengths:
+
+`Data.Visualization(clean_data, Statistics_data)`
   
 
   
- * movie.py
+ *[movie.py](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies/blob/main/spider_tools/Data_Visualization.py)
   ```sh
   from spider_tools.movie import Movie
   ```
@@ -121,7 +116,6 @@ This package is use to do export the global results of 250 movies, and the funct
 spider_IMDb.py: This package is used to grab all the basic information of 250 movies and save them. But because the administrator of the IMDb website has added a detection to judge whether it is a human or a robot, it cannot run
 <!-- ROADMAP -->
 ## Roadmap
-
 See the [open issues](https://github.com/catiaspsilva/README-template/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
@@ -136,31 +130,12 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
 <!-- Authors -->
 ## Authors
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link:  [Spider-for-IMDb-top-250-movies](https://github.com/yilinzhangAndy/Spider-for-IMDb-top-250-movies)
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-You can acknowledge any individual, group, institution or service.
-* [Catia Silva](https://faculty.eng.ufl.edu/catia-silva/)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
 
 ## Thank you
